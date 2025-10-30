@@ -8,8 +8,7 @@ env/
 ENV/
 
 
-build/
-dist/
+
 *.egg-info/
 .eggs/
 *.egg
