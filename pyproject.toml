@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "cotree"
-version = "0.2.0"
+version = "0.3.0"
 description = "COTree: inference tools for multi-omics cell trajectory data analysis"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { file = "LICENSE" }
-authors = [{ name = "Bo Yuan", email = "boyuan5@illinois.edu" }]
+authors = [{ name = "Bo Yuan", email = "boyuan5@illinois.edu" }, { name = "Rong Wei", email = "rongw6@illinois.edu" }]
 dependencies = [
   "kneed", "matplotlib", "numpy", "pandas", "pcurvepy2",
   "scipy", "seaborn", "scikit-learn", "scikit-misc", "torch", "tqdm"

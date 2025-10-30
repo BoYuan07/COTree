@@ -1,8 +1,0 @@
-.Rproj.user
-inst/doc
-/doc/
-/Meta/
-*.DS_Store
-*.Rhistory
-*.Rproj
-
