@@ -1,0 +1,148 @@
+{
+  "version": "0.5.0",
+  "validated_at": "2026-10-20T20:07:25.034470+00:00",
+  "python": "3.12.13",
+  "device": "cpu",
+  "source_tests": {
+    "tests": 27,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "installed_wheel_tests": {
+    "tests": 27,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "tests_passed": 27,
+  "tests_skipped": 0,
+  "installed_wheel_tests_passed": 27,
+  "dependency_compatibility_checks_passed": true,
+  "core_only_installation": {
+    "version": "0.5.0",
+    "installed_path": "/private/tmp/cotree-reactions-i3qdqoqd/core/lib/python3.12/site-packages/cotree/__init__.py",
+    "installed_outside_source_directory": true,
+    "optional_or_removed_libraries_absent": {
+      "optuna": true,
+      "umap": true,
+      "mofapy2": true
+    },
+    "reaction_dependencies": {
+      "cobra": "0.32.1",
+      "networkx": "3.7"
+    },
+    "reaction_plot_saved": true,
+    "bundled_cells": 50,
+    "quickstart": {
+      "version": "0.5.0",
+      "cells": 8,
+      "time_points": 24,
+      "lineages": 8,
+      "embedding_shape": [
+        192,
+        12
+      ],
+      "functional_species": 11,
+      "driver_species": [],
+      "validation_loss": 4.035512447357178,
+      "model_loss": 4.03471565246582
+    }
+  },
+  "sdist_installation": {
+    "version": "0.5.0",
+    "installed_outside_source_directory": true,
+    "source_matches_wheel": true,
+    "bundled_csv_files": 200
+  },
+  "reference_comparisons": [
+    "flexible preprocessing/model outputs versus the manuscript",
+    "manifold loss",
+    "tree curves/nodes/distances",
+    "driver thresholds"
+  ],
+  "extra_feature_smoke_checks": [
+    "Optuna (one test trial)",
+    "SBML reaction plot with standard installation"
+  ],
+  "raw_feature_dimension_regressions_passed": true,
+  "whole_cell_validation_checks_passed": true,
+  "single_branching_convergent_trajectory_checks_passed": true,
+  "tutorial_validation": {
+    "code_cells_passed": 30,
+    "embedded_figures": 9,
+    "outputs_saved": true,
+    "dataset": "Multi_Replication",
+    "cells": 50,
+    "time_points_per_cell": 106,
+    "latent_modules": 90,
+    "training_epochs": 200,
+    "module_epochs": 10,
+    "driver_epochs": 300,
+    "iterations_reduced": false,
+    "kernel": "cotree-050",
+    "python": "3.12.13",
+    "elapsed_seconds": 179.9,
+    "device": "cpu",
+    "torch_threads": 2,
+    "model_and_trainer": "cotree.dtmae_flex",
+    "same_model_used_for_species_analysis": true,
+    "tree_parameters_use_defaults": true,
+    "tuning_example_in_markdown_only": true,
+    "tuning_executed": false,
+    "original_section_order_preserved": true,
+    "original_dataset_loading_preserved": true,
+    "notebook_sha256": "51205e76fb89399b7c331890650828d1689be85bc054c0eaf849a41babd169f4",
+    "executed_notebook_sha256": "9f97c986d616aa14bdf75bff9ad7fa889fd302126084b26351bf2b56bbc41636",
+    "input_explanations_added": true,
+    "documentation_edit_preserves_code_and_outputs": true,
+    "documentation_checks_passed": true,
+    "executable_code_and_outputs_match_validated_version": true,
+    "validation_scope": "Historical full execution; current code AST and saved outputs verified unchanged. Current release also passes short CPU workflow and 27 tests."
+  },
+  "distribution_audit": {
+    "bundled_csv_files": 200,
+    "granger_absent_from_distributions": true,
+    "representation_comparison_absent": true,
+    "changelog_absent": true,
+    "archive_sources_match": true,
+    "notebook_code_ast_and_outputs_preserved": true,
+    "notebook_code_cells": 30,
+    "notebook_figures": 9
+  },
+  "distribution_sha256": {
+    "cotree-0.5.0-py3-none-any.whl": "cd452ca2cd808fdde7a15a6e57c34b57788dfcc57b6c5799e488d3c991e74b7e",
+    "cotree-0.5.0.tar.gz": "1a2592ef7e07e6e49bf3bfb6996bd74a1ee43ed812ebe9a457c2445946a0aec8"
+  },
+  "cleanup": {
+    "removed": [
+      ".pytest_cache",
+      ".DS_Store",
+      "tests/__pycache__",
+      "src/.DS_Store",
+      "src/cotree/__pycache__",
+      "dist/cotree-0.4.0-py3-none-any.whl",
+      "dist/cotree-0.4.0.tar.gz"
+    ],
+    "source_cache_residue": [],
+    "unused_imports_removed": true,
+    "working_notebook_environment_retained": true
+  },
+  "plot_visual_checks_passed": true,
+  "manuscript_source_unchanged": true,
+  "bundled_data_unchanged": true,
+  "published": false,
+  "tested_distribution_sha256": {
+    "cotree-0.5.0-py3-none-any.whl": "89ff13c84b343a16c3c31b7ce3be7dc3fcef2a1e949d35e97f9fe8cb41822f99",
+    "cotree-0.5.0.tar.gz": "8f57d7887a07ba4f84e506f589700c5bbbbd4b892c2e210ea7897355ca7b6105"
+  },
+  "representation_comparison_removed": true,
+  "reaction_plotting_in_standard_installation": true,
+  "documentation_rebuild": {
+    "rebuilt_at": "2026-10-20T20:16:26.119680+00:00",
+    "reason": "Preserve remote README paper link and current GitHub installation instructions",
+    "runtime_files_match_tested_installation": true,
+    "readme_in_source_archive": true,
+    "tutorial_in_source_archive": true
+  }
+}

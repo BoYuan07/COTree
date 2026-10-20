@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "cotree"
-version = "0.4.0"
+version = "0.5.0"
 description = "COTree: inference tools for multi-omics cell trajectory data analysis"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -12,8 +12,16 @@ license = { file = "LICENSE" }
 authors = [{ name = "Bo Yuan", email = "boyuan5@illinois.edu" }, { name = "Rong Wei", email = "rongw6@illinois.edu" }, { name = "Shulei Wang", email = "shuleiw@illinois.edu" }]
 dependencies = [
   "kneed", "matplotlib", "numpy", "pandas", "pcurvepy2",
-  "scipy", "seaborn", "scikit-learn", "scikit-misc", "torch", "tqdm"
+  "scipy", "seaborn", "scikit-learn>=1.5", "scikit-misc", "torch", "tqdm",
+  "cobra", "networkx"
 ]
+
+[project.optional-dependencies]
+tuning = ["optuna>=3"]
+dev = ["pytest>=7", "build", "hatchling>=1.25", "nbformat", "nbclient", "ipykernel"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [project.urls]
 Homepage = "https://github.com/BoYuan07/COTree"
@@ -21,13 +29,16 @@ Issues   = "https://github.com/BoYuan07/COTree/issues"
 
 # Wheel (what gets installed by pip)
 [tool.hatch.build.targets.wheel]
-packages = ["src/cotree"]          # <-- critical for src/ layout
-include = ["src/cotree/data/**"]   # optional: include your package data
+packages = ["src/cotree"]
 
 # Source distribution (sdist) files
 [tool.hatch.build.targets.sdist]
 include = [
   "src/cotree/**",
   "README.md",
+  "COTree.ipynb",
+  "examples/**",
+  "tests/**",
+  "pyproject.toml",
   "LICENSE",
 ]
